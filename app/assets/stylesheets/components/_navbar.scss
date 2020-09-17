@@ -1,12 +1,89 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.leftpart {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 29px;
+    color: #999;
+
+font-size: 9px;
+line-height: 12px;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+a {
+    color: #999;
+    
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+a:hover { text-decoration: none !important;
+color: black}
+.navbar {
+    background-color: lightblue;
+}
+ul {
+    list-style: none;
+    
+}
+
+li {
+    display: inline;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header {
+    font-family: 'Poppins', sans-serif;    font-weight: 300;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff; 
+}
+
+header .phrase {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+
+
+.noirfuture{
+font-size: 20px;
+font-weight: 700;
+}
+
+.phrase {
+    font-size: 16px;
+}
+
+.date {
+    font-size: 14px;
+}
+
+.menu {
+    font-size: 14px;
+}
+
+.mail {
+    font-size: 14px;
+}
+
+
+
+.test{
+    height: 100px;
+    width: 100px;
+}
+
+.test:hover {
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;   
+}
+
+
+.noirfuture {
+    height: 120px;
+    
 }
