@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Noirfuture</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
-  </head>
+</head>
 
-  <body>
+<body>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
-
     <%= yield %>
-  </body>
+    <script src="https://kit.fontawesome.com/349e7af2d0.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
