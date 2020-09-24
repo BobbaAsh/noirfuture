@@ -10,7 +10,6 @@ const LogoSwitcher = () => {
 
 
         document.getElementById("noirfuture").src = "/assets/logo" + x + ".png";
-        document.getElementById("doughnuts").innerHTML = "logo" + x + ".png";
     }, 1000);
 
     }
