@@ -1,0 +1,18 @@
+development:
+  cloud_name: noirfuture138
+  api_key: '365655183866162'
+  api_secret: oH4HSz-Oc1eGOf0ZBR6RJ6HGNWs
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: noirfuture138
+  api_key: '365655183866162'
+  api_secret: oH4HSz-Oc1eGOf0ZBR6RJ6HGNWs
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: noirfuture138
+  api_key: '365655183866162'
+  api_secret: oH4HSz-Oc1eGOf0ZBR6RJ6HGNWs
+  enhance_image_tag: true
+  static_file_support: false

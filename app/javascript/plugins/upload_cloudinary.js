@@ -4,7 +4,7 @@
         console.log('bobba la pute')
           const myWidget = cloudinary.createUploadWidget({
               cloudName: 'noirfuture138',
-              uploadPreset: 'ml_default'
+              uploadPreset: 'p3kpbot7'
           }, (error, result) => {
               if (!error && result && result.event === "success") {
                   console.log('Done! Here is the image info: ', result.info);

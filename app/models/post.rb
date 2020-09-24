@@ -1,3 +1,4 @@
 class Post < ApplicationRecord
-    has_one_attached :photo
+    has_many_attached :photos
+     mount_uploader :photos, PictureUploader
 end
