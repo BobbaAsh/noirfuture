@@ -1,5 +1,10 @@
 <%= simple_form_for(post) do |f| %>
-  <%= f.input :photo, as: :file %>
+
+
   <%= f.input :description%>
   <%= f.submit %>
 <% end %>
+  <button id="upload_widget" class="cloudinary-button">Upload files</button>
+
+
+<!-- label_html: { class: 'cloudinary-button' }, label_html: { id: 'upload_widget' } -->
