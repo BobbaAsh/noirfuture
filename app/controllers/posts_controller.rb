@@ -5,8 +5,8 @@ class PostsController < ApplicationController
       end
 
       def show
+       @posts = Post.all
       end
-
       def new
         @post = Post.new
       end
@@ -15,7 +15,7 @@ class PostsController < ApplicationController
         @post = Post.new(post_params)
          if @post.save
        redirect_to root_path
-          end
+        end
       end
 
 
@@ -31,8 +31,8 @@ class PostsController < ApplicationController
 
       private
 
+
       def post_params
-          params.require(:post).permit(:description, photos: [])
+          params.require(:post).permit( :description, :name, :category ,:photo, photos: [])
       end
 end
-
