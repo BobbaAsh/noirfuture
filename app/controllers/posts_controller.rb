@@ -5,8 +5,12 @@ class PostsController < ApplicationController
       end
 
       def show
-       @posts = Post.all
+       @post = Post.find(params[:id])
+       respond_to do |format|
+        format.js
+        format.html
       end
+    end
       def new
         @post = Post.new
       end

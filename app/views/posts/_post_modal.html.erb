@@ -1,0 +1,14 @@
+<div id="post-modal" class="modal fade" role="dialog">
+     <div class="modal-dialog modal-lg">
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal">&times;</button>
+         </div>
+
+         <div>
+ <% @posts.photos.each do |photo| %>
+  <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+         </div>
+       </div>
+     </div>
+</div>

@@ -1,5 +1,6 @@
 <div class="grid">
     <% @posts.shuffle.each do |post|%>
+      <%= link_to 'View Post', post_path(post), remote: true %>
     <div class="item" style="background-image: url('<%= cl_image_path post.photo.key,  :width=>"auto:100:800", crop: :scale %>')">
         <div class="card-noirfuture" >
             <div class='description'>
@@ -9,3 +10,4 @@
     </div>
     <% end %>
 </div>
+
