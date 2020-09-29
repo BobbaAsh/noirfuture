@@ -1,0 +1,30 @@
+@media (max-width: 1200px) {
+  .grid {
+    width: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: none;
+    grid-auto-rows: 200px;
+    padding: 10px;
+    margin-top: 20px;
+    counter-reset: div;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    width: 90vw;
+  }
+
+  .openbtn {
+    visibility: visible !important ;
+  }
+
+  .leftpart {
+    display: none;
+  }
+  .btn-noirfuture {
+    display: none;
+  }
+}

@@ -1,3 +1,28 @@
-<% @posts.photos.each do |photo| %>
-  <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
-<% end %>
+<div class="container mt-5">
+    <h2 class="text-center postname">
+        <%= @post.name %>
+    </h2>
+    <h3 class="text-center category">
+        <%= @post.category %>
+    </h3>
+
+    <img class='cover' src="<%= cl_image_path @post.photo.key, class: :cover, crop: :crop %> " alt="">
+    <div class="row p-5">
+        <div style="margin-left: 8.33333333%" class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 client">
+            <h3>THE CLIENT</h3>
+            <div class="division"></div>
+            <p class='grey-description'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo aliquam a fugit itaque. Doloribus assumenda aut dolorem dignissimos blanditiis incidunt doloremque totam voluptates ipsam ex sed in, nulla deleniti voluptatem.</p>
+        </div>
+
+
+    </div>
+
+
+    <div class='contenu'>
+        <% @post.photos.each do |photo| %>
+        <%= cl_image_tag photo.key, crop: :fill %>
+        <% end %>
+    </div>
+
+
+</div>
