@@ -1,43 +1,53 @@
 .grid {
-    width: 1000px;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 25px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 200px;
-    padding: 10px;
-    margin-top: 20px;
-    counter-reset: div
+  width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  padding: 10px;
+  margin-top: 20px;
+
+  counter-reset: div;
+}
+
+.item a {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none; /* No underlines on the link */
+  z-index: 10; /* Places the link above everything else in the div */
+  opacity: 0; /* Fix to make div clickable in IE */
 }
 
 .item:nth-child(6n + 4),
 .item:nth-child(6n + 1) {
-    grid-column: auto /span 2;
-    grid-row: auto /span 2;
+  grid-column: auto / span 2;
+  grid-row: auto / span 2;
 }
 
 .item {
-    display: flex;
-    flex-direction: column;
-    background-size: cover;
-
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
 }
 
 .item:before {
-    counter-increment: div;
-    content: counter(div);
-    margin: auto;
-    font-size: 40px;
+  counter-increment: div;
+
+  margin: auto;
+  font-size: 40px;
 }
 
 .card-noirfuture {
-    border-bottom: 1px solid #e3e3e3;
-    background-color: white;
-
+  border-bottom: 1px solid #e3e3e3;
+  background-color: white;
 }
 
 .description {
-    margin-top: 16px;
-    margin-bottom: 4px;
-    font-size: 13px;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  font-size: 13px;
 }
