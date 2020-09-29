@@ -1,0 +1,7 @@
+meta_product_name: "Noir Future"
+meta_title: "Noir Future"
+meta_description: "Communication Agency"
+meta_image: "logo1.png" # should exist in `app/assets/images/`
+twitter_account: "@noirfuture"   # required for Twitter Cards
+
+

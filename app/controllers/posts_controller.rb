@@ -1,11 +1,13 @@
 class PostsController < ApplicationController
     load_and_authorize_resource
+    add_breadcrumb "Work", :posts_path
       def index
         @posts = Post.all
       end
 
       def show
-       @posts = Post.all
+        @posts = Post.friendly.find(params[:id])
+        add_breadcrumb @post, post_path(@post)
       end
       def new
         @post = Post.new
