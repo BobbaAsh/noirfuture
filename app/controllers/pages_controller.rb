@@ -10,4 +10,8 @@ class PagesController < ApplicationController
   def date
     @date = Time.now
   end
+
+  def robots
+    respond_to :text
+  end
 end
