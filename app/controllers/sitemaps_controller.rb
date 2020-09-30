@@ -1,6 +1,5 @@
 class SitemapsController < ApplicationController
-
-  layout :false
+  skip_before_action :authenticate_user!
   before_action :init_sitemap
 
   def index
