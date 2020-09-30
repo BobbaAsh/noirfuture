@@ -1,12 +1,13 @@
-<%= simple_form_for(post) do |f| %>
-  <%= f.input :photo, as: :file %>
-  <%= f.input :photos, as: :file, input_html: { multiple: true } %>
-  <%= f.input :description%>
-  <%= f.input :name%>
-  <%= f.input :category%>
-  <%= f.submit %>
-<% end %>
-  <button id="upload_widget" class="cloudinary-button">Upload files</button>
-
+<div class="col-3 d-flex justify-content-center mx-auto flex-column mt-5">
+    <%= simple_form_for(post) do |f| %>
+    <%= f.input :photo, label: 'Photo de couverture' ,as: :file %>
+    <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+    <%= f.input :description%>
+    <%= f.input :name%>
+    <%= f.input :category%>
+    <%= f.submit %>
+    <% end %>
+    <button id="upload_widget" class="cloudinary-button">Upload files</button>
+</div>
 
 <!-- label_html: { class: 'cloudinary-button' }, label_html: { id: 'upload_widget' } -->
