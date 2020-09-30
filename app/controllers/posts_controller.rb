@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
     load_and_authorize_resource
+    skip_authorization_check only: :show
     add_breadcrumb "Work", :posts_path
       def index
         @posts = Post.all
