@@ -1,7 +1,7 @@
 require 'date'
 
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home ]
+  skip_before_action :authenticate_user!, only: [ :home, :robots, :date]
 
   def home
     @posts = Post.all
