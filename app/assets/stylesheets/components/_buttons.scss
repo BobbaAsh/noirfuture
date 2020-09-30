@@ -4,6 +4,16 @@ $blue: #1cd3f8;
 $angle: 8px;
 $angle-o: 4px;
 
+.btn-noirfuture2 {
+  background-color: #1e1e1e;
+  border: 0.2rem solid green;
+  color: white;
+
+  &:hover {
+    color: green;
+  }
+}
+
 .btn-noirfuture {
   width: 200px;
   align-self: end;
