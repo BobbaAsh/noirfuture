@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
+    before_action :authenticate_user!, :only => [:create, :new, :update, :delete]
     load_and_authorize_resource
-    skip_authorization_check only: :show
     add_breadcrumb "Work", :posts_path
       def index
         @posts = Post.all
@@ -8,7 +8,7 @@ class PostsController < ApplicationController
 
       def show
         @posts = Post.friendly.find(params[:id])
-        add_breadcrumb @post, post_path(@post)
+        add_breadcrumb @posts, post_path(@posts)
       end
       def new
         @post = Post.new
@@ -40,6 +40,6 @@ class PostsController < ApplicationController
 
 
       def post_params
-          params.require(:post).permit( :description, :name, :category ,:photo, photos: [])
+          params.require(:post).permit( :link ,:description, :name, :category ,:photo, photos: [])
       end
 end
