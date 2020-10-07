@@ -22,7 +22,7 @@ gem 'redis', '~> 4.0'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'cancancan'
 gem 'slim'
-gem 'canonical-rails', github: 'jumph4x/canonical-rails'*
+gem 'canonical-rails', github: 'jumph4x/canonical-rails'
 gem 'compass-rails'
 
 # Use Active Storage variant
