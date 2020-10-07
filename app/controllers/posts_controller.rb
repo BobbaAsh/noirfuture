@@ -31,7 +31,7 @@ class PostsController < ApplicationController
         redirect_to @post
       end
 
-      def delete
+      def destroy
         @post = Post.find(params[:id])
         @post.destroy
       end
@@ -40,6 +40,6 @@ class PostsController < ApplicationController
 
 
       def post_params
-          params.require(:post).permit( :link ,:description, :name, :category ,:photo, photos: [])
+          params.require(:post).permit(:id, :link ,:description, :name, :category ,:photo, photos: [])
       end
 end

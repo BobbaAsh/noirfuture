@@ -1,25 +1,23 @@
 <header>
     <div class="container-fluid">
-
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div id="mySidebar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <a href="#">About</a>
                 <a href="#">Services</a>
                 <a href="#">Clients</a>
-                <a href="#">Contact</a>
+                <%= mail_to "noirfuture@gmail.Com" do %>
+                CONTACT
+                <% end %>
             </div>
-
-
             <div class="col-xs-2 col-sm-2 col-md-3 col-lg-3">
                 <button class="openbtn">☰</button>
                 <div class="leftpart">
-                    <a href="https://www.behance.net/noirfuturestudio">BEHANCE</a>
-                    <a href="https://www.instagram.com/noirfuturestudio">INSTAGRAM</a>
-                    <a href="">FACEBOOK</a>
-                    <a href="">TWITTER</a>
-                </div>
+                    <a target="_blank" href="https://www.behance.net/noirfuturestudio">BEHANCE</a>
+                    <a target="_blank" href="https://www.instagram.com/noirfuturestudio">INSTAGRAM</a>
+                    <a target="_blank" href="">FACEBOOK</a>
 
+                </div>
             </div>
             <div class="middle col-xs-8 col-sm-8 col-md-6 col-lg-6">
                 <a href="/">
@@ -38,10 +36,11 @@ MEXICO CITY </div>
                     </button>
                     <% else %>
                     <a href="/users/sign_in">LOGIN</a>
-                    <a href="">CONTACT</a>
+                    <%= mail_to "noirfuture@gmail.Com" do %>
+                    CONTACT
+                    <% end %>
                     <a href="" id=date>
                         <%= Time.now %></a>
-                    <a href="">TWITTER</a>
                     <% end %>
                 </div>
             </div>
