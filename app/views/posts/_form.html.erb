@@ -3,7 +3,7 @@
     <%= f.input :photo, label: 'Photo de couverture' ,as: :file %>
     <%= f.input :photos, as: :file, input_html: { multiple: true } %>
     <%= f.input :name, label: 'Nom' %>
-    <%= f.input :description%>
+    <%= f.input :description, as: :text  %>
     <%= f.input :category, label: 'Catégorie' %>
     <%= f.submit  class: "btn btn-primary d-flex justify-center", style: 'width: 100%', label: 'Créer un post'%>
     <% end %>
