@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   match "/500", to: "errors#internal_server_error", via: :all
   get '/sitemap.xml' => 'sitemaps#index', defaults: { format: 'xml' }
   get "/robots.:format", to: "pages#robots"
+
   constraints(host: /^(?!www\.)/i) do
   get '(*any)' => redirect { |params, request|
     URI.parse(request.url).tap { |uri| uri.host = "www.#{uri.host}" }.to_s
