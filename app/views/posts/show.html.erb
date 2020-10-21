@@ -9,6 +9,9 @@
             data: { confirm: "Supprimer ce post ?" }  do %>
         <i class="fas fa-trash-alt" style="font-size: 20px;"></i>
         <% end %>
+         <%= link_to edit_post_path do %>
+        <i class="fas fa-pen" style="font-size: 20px;"></i>
+        <% end %>
     </h2>
     <% else  %>
     <h2 class="text-center postname">
