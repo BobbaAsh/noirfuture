@@ -30,8 +30,7 @@
 .item {
   display: flex;
   flex-direction: column;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
 }
 
 .item:before {

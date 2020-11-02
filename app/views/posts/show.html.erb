@@ -4,10 +4,13 @@
     <% if user_signed_in? %>
     <h2 class="text-center postname">
         <%= @post.name %>
-        <%= link_to root_path,
+        <%= link_to post_path,
             method: :delete,
             data: { confirm: "Supprimer ce post ?" }  do %>
         <i class="fas fa-trash-alt" style="font-size: 20px;"></i>
+        <% end %>
+         <%= link_to edit_post_path do %>
+        <i class="fas fa-pen" style="font-size: 20px;"></i>
         <% end %>
     </h2>
     <% else  %>
