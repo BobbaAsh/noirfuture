@@ -15,8 +15,18 @@
 @media (max-width: 768px) {
   .grid {
     width: 90vw;
-    grid-template-columns: 1fr;
-    margin: 0 auto;
+    grid-gap: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    background-size: 100%;
+    background-position: center;
+    height: 250px;
   }
 
   .openbtn {
